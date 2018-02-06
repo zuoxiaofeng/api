@@ -19,6 +19,7 @@ func main() {
 
 	app.Get("/zxf/v1/desc", func(ctx iris.Context) {
 		ctx.Text("My web api")
+		ctx.HTML("")
 	})
 
 	app.Post("/add", methods.Add)
